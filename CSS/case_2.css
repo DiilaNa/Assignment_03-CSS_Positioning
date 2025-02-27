@@ -1,0 +1,29 @@
+header>img{
+    width: 150px;
+    height: 50px ;
+    position: static;
+}
+header>nav>h1:first-child{
+    font-size: 20px;
+    top: 0;
+    right: 345px;
+    position: absolute;
+}
+header>nav>h1:nth-child(2){
+    font-size: 20px;
+    top: 0;
+    right: 245px;
+    position: absolute;
+}
+header>nav>h1:nth-child(3){
+    font-size: 20px;
+    top: 0;
+    right: 120px;
+    position: absolute;
+}
+header>nav>h1:last-child{
+    font-size: 20px;
+    top: 0;
+    right: 50px;
+    position: absolute;
+}

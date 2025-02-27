@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../Lib/normalize.css">
+    <style>
+        .square:first-child{
+            width: 50%;
+            height: 50%;
+            background-color: green;
+            position: absolute;
+            top: 0;
+            right: 0;
+
+        }
+        .square:nth-child(2){
+            width: 50%;
+            height: 50%;
+            background-color: red;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .square:nth-child(3){
+            width: 50%;
+            height: 50%;
+            background-color: #0bd30b;
+            position: absolute;
+            bottom: 0;
+        }
+        .square:nth-child(4){
+            width: 50%;
+            height: 50%;
+            background-color: yellow;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        .square:nth-child(5){
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        .circle{
+            width: 125px;
+            height: 125px;
+            background-color: red;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            border-radius: 100%;
+
+
+        }
+        .square1{
+            width: 150px;
+            height: 150px;
+            background-color: white;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            border-radius: 100%;
+        }
+        .insideSquare {
+            width: 75px;
+            height: 75px;
+            background-color: red;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            transform-origin: center;
+            animation: spin 1s linear infinite;
+
+        }
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        #outsideCircle1{
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-bottom-right-radius: 100%;
+        }
+        #outsideCircle2{
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            position: absolute;
+            top: 0;
+            right: 0;
+            border-bottom-left-radius: 100%;
+        }
+        #outsideCircle3{
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            border-top-left-radius: 100%;
+        }
+        #outsideCircle4{
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            border-top-right-radius: 100%;
+        }
+        #outsideCircle5{
+            width: 150px;
+            height: 80px;
+            background-color: white;
+            position: absolute;
+            right: 0;
+            top: 0;
+            left: 0;
+            margin: 0 auto;
+            border-radius: 0 0 100px 100px;
+
+        }
+
+        #outsideCircle6{
+            width: 150px;
+            height: 80px;
+            background-color: white;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            border-radius: 100px 100px 0 0;
+
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="square">
+    <div class="square1">
+        <div class="insideSquare"></div>
+    </div>
+</div>
+<div class="square">
+    <div class="square1">
+        <div class="insideSquare"></div>
+    </div>
+</div>
+<div class="square">
+    <div class="square1">
+        <div class="insideSquare"></div>
+    </div>
+</div>
+<div class="square">
+    <div class="square1">
+        <div class="insideSquare"></div>
+    </div>
+</div>
+<div class="square">
+    <div class="circle"></div>
+</div>
+<div id="outsideCircle1"></div>
+<div id="outsideCircle2"></div>
+<div id="outsideCircle3"></div>
+<div id="outsideCircle4"></div>
+<div id="outsideCircle5"></div>
+<div id="outsideCircle6"></div>
+</body>
+</html>

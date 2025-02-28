@@ -8,6 +8,8 @@ header>nav>h1:first-child{
     top: 0;
     right: 345px;
     position: absolute;
+
+
 }
 header>nav>h1:nth-child(2){
     font-size: 20px;

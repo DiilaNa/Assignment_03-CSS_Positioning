@@ -27,3 +27,8 @@ header>nav>h1:last-child{
     right: 50px;
     position: absolute;
 }
+#boxModle{
+    padding: 100% 25% ;
+    background-color: purple;
+
+}

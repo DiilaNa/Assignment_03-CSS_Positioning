@@ -2,57 +2,114 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="../Lib/normalize.css">
     <title>Case 4</title>
-<!--
-  <link rel="stylesheet" href="case_4.css">
--->
-  <link rel="stylesheet" href="../Lib/normalize.css">
   <style>
+      * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+    .main-container{
+        position: relative;
+        width: 100%;
+        height: 80vw;
+    }
+    .main-container:first-child{
+        background-color: white;
+    }
+    .main-container:nth-child(2){
+        background-color: #0698d6;
+    }
+    .main-container:nth-child(3){
+        background-color: #979696;
+    }
+    .main-container:last-child{
+        background-color: #b81f34;
+    }
+    .main-container:first-child .box{
+        position: sticky;
+        top: 0;
+        background-color: darkorange;
+        width: 100%;
+        height: 50px;
+        padding: 10px;
+    }
+    .main-container:nth-child(2) .box{
+        position: sticky;
+        top: 0;
+        background-color: blue;
+        width: 100%;
+        height: 50px;
+        padding: 10px;
+    }
+
+    .main-container:nth-child(3) .box{
+        position: sticky;
+        top: 0;
+        background-color: #515151;
+        width: 100%;
+        height: 50px;
+        padding: 10px;
+    }
+    .main-container:last-child .box{
+        position: sticky;
+        top: 0;
+        background-color: darkred;
+        width: 100%;
+        height: 50px;
+        padding: 10px;
+    }
+    .main-container .text{
+        font-size: 100px;
+        text-align: center;
+        color: black;
+
+    }
 
   </style>
 </head>
 <body>
+    <main>
 <!--Page one-->
-<section>
-    <div>
-        <h3>Card 1</h3>
-    </div>
-    <div>
-        <h1>Hello</h1>
-    </div>
-</section>
+    <section class="main-container">
+        <div class="box">
+            <h3>Card 1</h3>
+        </div>
+        <div class="text">
+            <h1>Hello</h1>
+        </div>
+    </section>
 
 <!--Page two-->
-<section>
-    <div>
-        <h3>Card 2</h3>
-    </div>
-    <div>
-        <h1>How</h1>
-    </div>
-</section>
+    <section class="main-container">
+      <div class="box">
+            <h3>Card 2</h3>
+      </div>
+        <div class="text">
+           <h1>How</h1>
+         </div>
+    </section>
 
 <!--Page three-->
-<section>
-    <div>
-        <h3>Card 2</h3>
-    </div>
-    <div>
-        <h1>Are</h1>
-    </div>
-</section>
+    <section class="main-container">
+        <div class="box">
+            <h3>Card 3</h3>
+        </div>
+        <div class="text">
+            <h1>Are</h1>
+        </div>
+    </section>
 
 <!--Page four-->
-<section>
-    <div>
-        <h3>Card 4</h3>
-    </div>
-    <div>
-        <h1>You..?</h1>
-    </div>
-</section>
-
-
-
+    <section class="main-container">
+        <div class="box">
+            <h3>Card 4</h3>
+        </div>
+        <div class="text">
+            <h1>You..?</h1>
+        </div>
+    </section>
+    </main>
 </body>
 </html>

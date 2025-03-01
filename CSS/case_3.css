@@ -25,6 +25,7 @@
     position: absolute;
     inset: 0;
     margin: auto;
+    z-index: -1;
 }
 .circle:first-child{
     background-color: purple;

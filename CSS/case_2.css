@@ -53,3 +53,9 @@ footer {
     width: 100vw;
     height: 50px;
 }
+.content{
+    top: 0;
+    right: 0;
+    position: absolute;
+
+}
